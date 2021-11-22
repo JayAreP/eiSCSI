@@ -1,4 +1,4 @@
-# Easy iSCSI Services Connection Module (SISCM)
+# Easy iSCSI Services Connection Module (eiSCSI)
 This module is a wrapper for the native iSCSI and MPIO powershell modules, created to help ease the management connections and sessions to iSCSI Targets. 
 
 ### Installation 
