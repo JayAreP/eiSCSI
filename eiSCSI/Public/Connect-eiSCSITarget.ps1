@@ -14,7 +14,7 @@ function Connect-eiSCSITarget {
     if ($pingTest.TcpTestSucceeded) {
         $sourceNic = Get-NetIPConfiguration | Where-Object {$_.IPv4Address.IPAddress -eq $pingTest.SourceAddress.IPAddress}
     } else {
-        $return = "Could not reach the Cnode on any available interface. Please check that the correct CNode IP was supplied and that any required routes are configured."
+        $return = "Could not reach the target on any available interface. Please check that the correct target IP was supplied and that any required routes are configured."
         return $return | Write-Error
     }
 
