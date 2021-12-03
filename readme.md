@@ -44,8 +44,8 @@ Target IP   Host IP   Configured Sessions Connected Sessions Target IQN
 ```
 
 ```Powershell
-# Connect sessions to cnode
-Connect-eiSCSITarget -cnodeIP 10.12.0.20 -sessionCount 4
+# Connect sessions to target
+Connect-eiSCSITarget -targetIP 10.12.0.20 -sessionCount 4
 
 Target IP   Host IP   Configured Sessions Connected Sessions Target IQN
 --------   -------   ------------------- ------------------ --------
@@ -54,8 +54,8 @@ Target IP   Host IP   Configured Sessions Connected Sessions Target IQN
 ```
 
 ```Powershell
-# Disconnect all sessions from cnode
-Disconnect-eiSCSITarget -cnodeIP 10.12.0.21
+# Disconnect all sessions from target
+Disconnect-eiSCSITarget -targetIP 10.12.0.21
 
 Target IP   Host IP   Configured Sessions Connected Sessions Target IQN
 --------   -------   ------------------- ------------------ --------
